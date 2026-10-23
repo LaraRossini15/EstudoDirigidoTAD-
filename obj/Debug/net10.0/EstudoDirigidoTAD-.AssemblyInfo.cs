@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstudoDirigidoTAD-")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4c4449cc9d2d8ad437cbe468db2a4acc645b1d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+451d217f4b6637e9451988ee4fee2990a8a9c108")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstudoDirigidoTAD-")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstudoDirigidoTAD-")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

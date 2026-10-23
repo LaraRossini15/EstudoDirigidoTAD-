@@ -96,5 +96,29 @@ class Program
             "Quantidade de comparacoes: " +
             comparacoesOrdenado
         );
+        Console.WriteLine();
+        Console.WriteLine("=== Desafio: Ordenar Pilha ===");
+
+        Pilha pilhaDesordenada = new Pilha(5);
+
+        pilhaDesordenada.empilha(3);
+        pilhaDesordenada.empilha(1);
+        pilhaDesordenada.empilha(5);
+        pilhaDesordenada.empilha(2);
+        pilhaDesordenada.empilha(4);
+
+        Console.WriteLine("Pilha original (base para topo):");
+        pilhaDesordenada.mostra();
+
+        Pilha pilhaOrdenada =
+            OrdenacaoPilha.ordenaPilha(pilhaDesordenada);
+
+        Console.WriteLine("Pilha ordenada (base para topo):");
+        pilhaOrdenada.mostra();
+
+        Console.WriteLine(
+            "Maior valor no topo: " +
+            pilhaOrdenada.consultaTopo()
+        );
     }
 }
