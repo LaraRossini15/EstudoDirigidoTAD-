@@ -1,36 +1,100 @@
-﻿
-using System;
-class Program{
-    static void Main(string[] args){
-        Console.WriteLine("=== Parte 1: Pilha ===");
-        Pilha p = new Pilha(5);
-        p.empilha(1);
-        p.empilha(3);
-        p.empilha(5);
-        p.empilha(7);
-        p.mostra();
+﻿using System;
 
-        Console.WriteLine(p.desempilha());
-        Console.WriteLine(p.consultaTopo());
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("=== Parte 1: Testes da Pilha ===");
 
-        p.empilha(8);
-        p.empilha(9);
-        p.mostra();
+        Pilha pilha = new Pilha(5);
 
-        Console.WriteLine(p.cheia());
-        try{
-            p.empilha(2);
-        }
-        catch (Exception e){
-            Console.WriteLine(e.Message);
-        }
-        Console.WriteLine("\n=== Parte 3.1: Inverter texto ===");
-        Console.WriteLine(OperacoesPilha.inverte("PUCMINAS"));
-        Console.WriteLine("\n=== Parte 3.2: Balanceamento ===");
-        Console.WriteLine(OperacoesPilha.balanceado("(a+b)*[c-d]"));
-        Console.WriteLine(OperacoesPilha.balanceado("{[()]}"));
-        Console.WriteLine(OperacoesPilha.balanceado("((a)"));
-        Console.WriteLine(OperacoesPilha.balanceado("a+b)"));
-        Console.WriteLine(OperacoesPilha.balanceado("([)]"));
+        pilha.empilha(10);
+        pilha.empilha(20);
+        pilha.empilha(30);
+
+        Console.WriteLine("Elementos da pilha:");
+        pilha.mostra();
+
+        Console.WriteLine("Elemento do topo: " + pilha.consultaTopo());
+        Console.WriteLine("Tamanho da pilha: " + pilha.tamanho());
+
+        Console.WriteLine("Elemento removido: " + pilha.desempilha());
+
+        Console.WriteLine("Pilha após remover o topo:");
+        pilha.mostra();
+
+        Console.WriteLine("A pilha está vazia? " + pilha.vazia());
+        Console.WriteLine();
+        Console.WriteLine("=== Parte 3.1: Inverter String ===");
+
+        string texto = "Cidade Conectada";
+        string textoInvertido = OperacoesPilha.inverte(texto);
+
+        Console.WriteLine("Texto original: " + texto);
+        Console.WriteLine("Texto invertido: " + textoInvertido);
+        Console.WriteLine();
+        Console.WriteLine("=== Parte 3.2: Verificar Balanceamento ===");
+
+        string expressao1 = "{[()]}";
+        string expressao2 = "{[(])}";
+
+        Console.WriteLine(
+            expressao1 + " -> " +
+            (OperacoesPilha.balanceado(expressao1)
+                ? "Balanceada"
+                : "Nao balanceada")
+        );
+
+        Console.WriteLine(
+            expressao2 + " -> " +
+            (OperacoesPilha.balanceado(expressao2)
+                ? "Balanceada"
+                : "Nao balanceada")
+        );
+
+        Console.WriteLine();
+        Console.WriteLine("=== Parte 4: Bubble Sort com Pilhas ===");
+
+        int[] vetor = { 5, 2, 9, 1, 7 };
+
+        int[] ordenado = Bubble.bubblePilhas(
+            vetor,
+            out int comparacoes
+        );
+
+        Console.WriteLine(
+            "Vetor original: " + string.Join(", ", vetor)
+        );
+
+        Console.WriteLine(
+            "Vetor ordenado: " + string.Join(", ", ordenado)
+        );
+
+        Console.WriteLine(
+            "Quantidade de comparacoes: " + comparacoes
+        );
+        int[] vetorOrdenado = { 1, 2, 3, 4, 5 };
+
+        int[] resultadoOrdenado = Bubble.bubblePilhas(
+            vetorOrdenado,
+            out int comparacoesOrdenado
+        );
+
+        Console.WriteLine();
+
+        Console.WriteLine(
+            "Vetor ja ordenado: " +
+            string.Join(", ", vetorOrdenado)
+        );
+
+        Console.WriteLine(
+            "Resultado: " +
+            string.Join(", ", resultadoOrdenado)
+        );
+
+        Console.WriteLine(
+            "Quantidade de comparacoes: " +
+            comparacoesOrdenado
+        );
     }
 }

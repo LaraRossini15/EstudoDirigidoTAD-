@@ -1,0 +1,15 @@
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\bin\Debug\net10.0\EstudoDirigidoTAD-.exe
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\bin\Debug\net10.0\EstudoDirigidoTAD-.deps.json
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\bin\Debug\net10.0\EstudoDirigidoTAD-.runtimeconfig.json
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\bin\Debug\net10.0\EstudoDirigidoTAD-.dll
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\bin\Debug\net10.0\EstudoDirigidoTAD-.pdb
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.AssemblyInfoInputs.cache
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.AssemblyInfo.cs
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.csproj.CoreCompileInputs.cache
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.dll
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\refint\EstudoDirigidoTAD-.dll
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.pdb
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.genruntimeconfig.cache
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\ref\EstudoDirigidoTAD-.dll
+C:\Users\larar\AED\LAB6\EstudoDirigidoTAD-\obj\Debug\net10.0\EstudoDirigidoTAD-.sourcelink.json
